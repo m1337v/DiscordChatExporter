@@ -5,17 +5,8 @@
     <AssemblyName>DiscordChatExporter</AssemblyName>
     <ApplicationIcon>..\favicon.ico</ApplicationIcon>
     <PublishTrimmed>true</PublishTrimmed>
-    <JsonSerializerIsReflectionEnabledByDefault>true</JsonSerializerIsReflectionEnabledByDefault>
-    <NoWarn>$(NoWarn);IL2104</NoWarn>
-  </PropertyGroup>
-
-  <!-- Avalonia-related settings -->
-  <PropertyGroup>
+    <CopyOutputSymbolsToPublishDirectory>false</CopyOutputSymbolsToPublishDirectory>
     <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
-    <!-- Warnings not valid when using compiled bindings -->
-    <NoWarn>$(NoWarn);IL2026</NoWarn>
-    <!-- Warnings about Material.Avalonia having peer dependencies that we don't use -->
-    <NoWarn>$(NoWarn);IL2035</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,7 +18,7 @@
     <PackageReference Include="Avalonia" Version="11.0.10" />
     <PackageReference Include="Avalonia.Desktop" Version="11.0.10" />
     <PackageReference Include="Avalonia.Diagnostics" Version="11.0.10" Condition="'$(Configuration)' == 'Debug'" />
-    <PackageReference Include="Cogwheel" Version="2.0.4" />
+    <PackageReference Include="Cogwheel" Version="2.1.0" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.2.2" />
     <PackageReference Include="CSharpier.MsBuild" Version="0.28.2" PrivateAssets="all" />
     <PackageReference Include="Deorcify" Version="1.0.2" PrivateAssets="all" />
@@ -36,7 +27,7 @@
     <PackageReference Include="Material.Avalonia" Version="3.6.0" />
     <PackageReference Include="Material.Icons.Avalonia" Version="2.1.9" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.0" />
-    <PackageReference Include="Onova" Version="2.6.11" />
+    <PackageReference Include="Onova" Version="2.6.12" />
   </ItemGroup>
 
   <ItemGroup>
